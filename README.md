@@ -29,22 +29,42 @@ GanttChart project.
   `save_figure`) and game-specific heatmaps.
 - Importable API, interactive CLI, examples and automated tests.
 
-## Requirements and installation
+## Requirements
 
-- Python **3.15 or later** (the declared supported version).
+- **Python 3.15 or later** (the declared supported version).
 - NumPy and Matplotlib, installed automatically by pip.
 - Development/testing tools are included in the optional `dev` extra.
 
-From the project root:
+## Installation
+
+Clone the repository:
 
 ```bash
+git clone https://github.com/Thomeli09/voltorbegame.git
+cd voltorbegame
+```
+
+Create a virtual environment (example commands for Windows PowerShell):
+
+```powershell
+py -3.15 -m venv .venv
+.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
 python -m pip install -e .
 ```
 
-To run the tests or work on the package:
+On Linux/macOS, use `python3.15 -m venv .venv` and `source .venv/bin/activate`.
+Alternatively, `python -m pip install -r requirements.txt` installs the editable
+package. To install development dependencies:
 
 ```bash
 python -m pip install -e ".[dev]"
+# Or: python -m pip install -r requirements-dev.txt
+```
+
+To run the tests:
+
+```bash
 python -m pytest -q
 ```
 
