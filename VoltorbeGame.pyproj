@@ -22,28 +22,45 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="src\voltorbe_game\data_general\DataManagementLib.py" />
-    <Compile Include="examples\advanced_example.py" />
-    <Compile Include="examples\basic_example.py" />
-    <Compile Include="src\voltorbe_game\data_general\__init__.py">
+    <Compile Include="examples\01_basic_solver.py" />
+    <Compile Include="examples\02_visualize_and_update.py" />
+    <Compile Include="examples\03_small_puzzle_and_fallback.py" />
+    <Compile Include="examples\04_compare_solvers.py" />
+    <Compile Include="examples\05_compare_solver_plots.py" />
+    <Compile Include="src\voltorbe_game\puzzle.py" />
+    <Compile Include="src\voltorbe_game\simulation\run.py" />
+    <Compile Include="src\voltorbe_game\simulation\__main__.py" />
+    <Compile Include="src\voltorbe_game\solver.py" />
+    <Compile Include="src\voltorbe_game\solvers\legacy.py" />
+    <Compile Include="src\voltorbe_game\solvers\__init__.py" />
+    <Compile Include="src\voltorbe_game\utils\data.py" />
+    <Compile Include="src\voltorbe_game\utils\__init__.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="src\voltorbe_game\visualization\plot.py" />
     <Compile Include="src\voltorbe_game\simulation\__init__.py" />
     <Compile Include="src\voltorbe_game\time\__init__.py" />
+    <Compile Include="src\voltorbe_game\visualization\plot_2d.py" />
+    <Compile Include="src\voltorbe_game\visualization\plot_3d.py" />
+    <Compile Include="src\voltorbe_game\visualization\plot_basic.py" />
+    <Compile Include="src\voltorbe_game\visualization\plot_board.py" />
+    <Compile Include="src\voltorbe_game\visualization\plot_parameters.py" />
     <Compile Include="src\voltorbe_game\visualization\__init__.py" />
     <Compile Include="src\voltorbe_game\__init__.py" />
-    <Compile Include="tests\test_simulation.py" />
+    <Compile Include="tests\test_puzzle.py" />
     <Compile Include="src\voltorbe_game\time\TimeLib.py" />
     <Compile Include="src\voltorbe_game\simulation\VoltorbeGame.py" />
     <Compile Include="src\voltorbe_game\simulation\VoltorbeGameLib.py" />
+    <Compile Include="tests\test_solver.py" />
+    <Compile Include="tests\test_solver_methods.py" />
+    <Compile Include="tests\test_visualization.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="docs\" />
     <Folder Include="examples\" />
     <Folder Include="src\" />
     <Folder Include="src\voltorbe_game\" />
-    <Folder Include="src\voltorbe_game\data_general\" />
+    <Folder Include="src\voltorbe_game\solvers\" />
+    <Folder Include="src\voltorbe_game\utils\" />
     <Folder Include="src\voltorbe_game\simulation\" />
     <Folder Include="src\voltorbe_game\time\" />
     <Folder Include="src\voltorbe_game\visualization\" />
