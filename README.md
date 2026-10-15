@@ -269,8 +269,6 @@ calculation and visualization using the package's public API.
 If you use VoltorbeGame in academic, technical or published work, please
 cite the software using [`CITATION.cff`](CITATION.cff).
 
-For a manually written citation :
-
 ```bibtex
 @software{Thommes_VoltorbeGame_2026,
   author       = {Thommes, Eliott},
@@ -281,7 +279,11 @@ For a manually written citation :
 }
 ```
 
+Author: **Eliott Thommes** · [ORCID 0009-0005-0697-2438](https://orcid.org/0009-0005-0697-2438)
+
 ## License
 
-Copyright © 2026 Eliott Thommes. Distributed under the
-[GNU General Public License v3.0 or later](LICENSE). See the `LICENSE` file for the full terms.
+Copyright © 2026 Eliott Thommes.
+
+Licensed under the **GNU General Public License, version 3 or later**
+(`GPL-3.0-or-later`). See [`LICENSE`](LICENSE) for the complete GPL-3.0 text.

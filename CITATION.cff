@@ -13,8 +13,8 @@ authors:
 version: 0.0.1
 date-released: 2026-10-15
 license: GPL-3.0-or-later
-repository-code: https://github.com/voltorbegame/
-url: "https://github.com/Thomeli09/ganttchart
+repository-code: https://github.com/Thomeli09/voltorbegame
+url: https://github.com/Thomeli09/voltorbegame
 keywords:
   - Python
   - Voltorb Flip
