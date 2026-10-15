@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "voltorbe-game"
+version = "0.0.1"
+description = "Constraint-based Voltorb Flip puzzle solver and Matplotlib visualizations"
+readme = "README.md"
+requires-python = ">=3.15"
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Eliott Thommes" },
+]
+dependencies = [
+    "numpy>=2.5.4",
+    "matplotlib>=3.11.2",
+]
+keywords = [
+    "voltorb-flip", "pokemon", "puzzle", "constraint-solving", "matplotlib",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.15",
+    "Operating System :: OS Independent",
+    "Topic :: Games/Entertainment :: Puzzle Games",
+]
+
+[project.optional-dependencies]
+rich-text = ["highlight-text"]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "ruff",
+    "build",
+    "sphinx",
+]
+
+[project.urls]
+Homepage = "https://github.com/Thomeli09/voltorbegame"
+Repository = "https://github.com/Thomeli09/voltorbegame"
+Issues = "https://github.com/Thomeli09/voltorbegame/issues"
+
+[project.scripts]
+voltorbe-game = "voltorbe_game.simulation:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["voltorbe_game*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = ["--import-mode=importlib"]
+
+[tool.ruff]
+line-length = 100
+
